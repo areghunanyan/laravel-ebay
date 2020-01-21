@@ -13,6 +13,7 @@ class Ebay
         $config = [
             'credentials' => config('ebay.'.config('ebay.mode').'.credentials'),
             'siteId'     => config('ebay.siteId'),
+            'authToken' => config('ebay.'.config('ebay.mode').'.authToken'),
             'sandbox' => $sandbox
         ];
 
